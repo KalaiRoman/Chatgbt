@@ -1,0 +1,48 @@
+@use "sass" as *;
+
+.main-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    .inside-main-section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .sidebar {
+            width: 15%;
+        }
+        .body-section {
+            width: 85%;
+            border: 1px solid red;
+            .inside-body-section {
+                width: 100%;
+                height: 100vh;
+                .message-body {
+                    width: 100%;
+                    height: 88vh;
+                    border: 4px solid green;
+                    overflow-y: scroll;
+                    scroll-behavior: smooth;
+                    .chatuser {
+                        width: 100%;
+                        display: flex;
+                        border: 1px solid blue;
+                    }
+                    .chat {
+                        width: 100%;
+                        display: flex;
+                        border: 1px solid red;
+                        border-top-left-radius: 300px;
+                        border-bottom-right-radius: 300px;
+
+                    }
+                }
+                .input-box {
+                    width: 100%;
+                    height: 12vh;
+                    border: 4px solid orange;
+                }
+            }
+        }
+    }
+}
